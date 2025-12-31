@@ -17,5 +17,13 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.lazyvim_check_order = false
 
 require("lazy").setup({
-    import = "plugins",
+  { import = "plugins" },
+  { import = "plugins.lsp" } }, {
+  checker = {
+    enabled = true,
+    notify = false
+  },
+  change_detection = {
+    notify = false,
+  },
 })
