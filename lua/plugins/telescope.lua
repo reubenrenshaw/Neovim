@@ -1,10 +1,5 @@
 return {
   {
-<<<<<<< Updated upstream
-    'nvim-telescope/telescope.nvim', tag = 'v0.2.0',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-  }
-=======
     "nvim-telescope/telescope.nvim",
     tag = "v0.2.0",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -15,5 +10,4 @@ return {
       { "<leader>uh", function() require("telescope.builtin").help_tags() end, desc = "Telescope help tags" },
     },
   },
->>>>>>> Stashed changes
 }
